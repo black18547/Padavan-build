@@ -66,6 +66,11 @@ jobs:
         sed -i '/CONFIG_FIRMWARE_INCLUDE_ARIA_WEB_CONTROL/d' .config
         sed -i '/CONFIG_FIRMWARE_INCLUDE_RPL2TP/d' .config
         sed -i '/CONFIG_FIRMWARE_ENABLE_USB/d' .config
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_CADDY/d' .config
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_CADDYBIN/d' .config
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS/d' .config
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_DNSFORWARDER/d' .config
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_DDNS_SSL/d' .config
         sed -i '/CONFIG_FIRMWARE_INCLUDE_OPENSSH/d' .config
         sed -i '/CONFIG_FIRMWARE_INCLUDE_ALIDDNS/d' .config
         sed -i '/CONFIG_FIRMWARE_INCLUDE_SSSERVER/d' .config #删除配置项SS server
@@ -95,7 +100,7 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_V2RAY=n" >> .config #集成v2ray执行文件（3.8M左右)，如果不集成，会从网上下载下来执行，不影响正常使用
         echo "CONFIG_FIRMWARE_INCLUDE_TROJAN=n" >> .config #集成trojan执行文件(1.1M左右)，如果不集成，会从网上下载下来执行，不影响正常使用
         echo "CONFIG_FIRMWARE_INCLUDE_KOOLPROXY=n" >> .config #KP广告过滤
-        echo "CONFIG_FIRMWARE_INCLUDE_CADDY=y" >> .config #在线文件管理服务
+        echo "CONFIG_FIRMWARE_INCLUDE_CADDY=n" >> .config #在线文件管理服务
         echo "CONFIG_FIRMWARE_INCLUDE_CADDYBIN=n" >> .config #集成caddu执行文件，此文件有13M,请注意固件大小。如果不集成，会从网上下载下来执行，不影响正常使用
         echo "CONFIG_FIRMWARE_INCLUDE_ADGUARDHOME=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_SRELAY=n" >> .config #可以不集成
@@ -105,6 +110,9 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_ARIA=y" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_ARIA_WEB_CONTROL=y" >> .config
         echo "CONFIG_FIRMWARE_ENABLE_USB=y" >> .config
+        echo "CONFIG_FIRMWARE_INCLUDE_DDNS_SSL=y" >> .config
+        echo "CONFIG_FIRMWARE_INCLUDE_DNSFORWARDER=y" >> .config
+        echo "CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS=y" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_OPENSSH=y" >> .config
         
         
