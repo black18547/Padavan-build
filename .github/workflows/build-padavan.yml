@@ -104,8 +104,8 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_CADDYBIN=n" >> .config #集成caddu执行文件，此文件有13M,请注意固件大小。如果不集成，会从网上下载下来执行，不影响正常使用
         echo "CONFIG_FIRMWARE_INCLUDE_ADGUARDHOME=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_SRELAY=n" >> .config #可以不集成
-        echo "CONFIG_FIRMWARE_INCLUDE_TRANSMISSION=y" >> .config #Include Transmission torrent
-        echo "CONFIG_FIRMWARE_INCLUDE_TRANSMISSION_WEB_CONTROL=y" >> .config #Include Transmission-Web-Control (advanced WebUI)
+        echo "CONFIG_FIRMWARE_INCLUDE_TRANSMISSION=n" >> .config #Include Transmission torrent
+        echo "CONFIG_FIRMWARE_INCLUDE_TRANSMISSION_WEB_CONTROL=n" >> .config #Include Transmission-Web-Control (advanced WebUI)
         echo "CONFIG_FIRMWARE_INCLUDE_RPL2TP=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_ARIA=y" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_ARIA_WEB_CONTROL=y" >> .config
