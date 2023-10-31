@@ -110,10 +110,10 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_ARIA=y" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_ARIA_WEB_CONTROL=y" >> .config
         echo "CONFIG_FIRMWARE_ENABLE_USB=y" >> .config
-        echo "CONFIG_FIRMWARE_INCLUDE_DDNS_SSL=y" >> .config
-        echo "CONFIG_FIRMWARE_INCLUDE_DNSFORWARDER=y" >> .config
-        echo "CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS=y" >> .config
-        echo "CONFIG_FIRMWARE_INCLUDE_OPENSSH=y" >> .config
+        echo "CONFIG_FIRMWARE_INCLUDE_DDNS_SSL=n" >> .config
+        echo "CONFIG_FIRMWARE_INCLUDE_DNSFORWARDER=n" >> .config
+        echo "CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS=n" >> .config
+        echo "CONFIG_FIRMWARE_INCLUDE_OPENSSH=n" >> .config
         
         
         fi
