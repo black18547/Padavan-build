@@ -99,7 +99,6 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_ALDRIVER=n" >> .config  #阿里云盘  ~3m
         echo "CONFIG_FIRMWARE_INCLUDE_ZEROTIER=n" >> .config #zerotier ~1.3M
         echo "CONFIG_FIRMWARE_INCLUDE_ALIDDNS=y" >> .config #aliddns
-        else
         echo "CONFIG_FIRMWARE_INCLUDE_QOS=y" >> .config #smartdns
         echo "CONFIG_FIRMWARE_INCLUDE_SMARTDNS=n" >> .config #smartdns
         echo "CONFIG_FIRMWARE_INCLUDE_SMARTDNSBIN=n" >> .config #smartdns二进制文件
@@ -124,7 +123,7 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_DNSFORWARDER=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_OPENSSH=n" >> .config
-        
+        else
         
         fi
         #########################################################################################
